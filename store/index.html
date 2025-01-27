@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main">
+      <div class="categories"></div>
+      <div class="products"></div>
+      <div class="product_info"></div>
+    </div>
+
+    <div class="notification hidden"></div>
+
+    <div class="order_form hidden">
+      <form name="order">
+        <div>
+          <input class="name_order" type="text" name="name" placeholder="Enter your name">
+        </div>
+        <div>
+          <input class="number_form_order" type="number" name="amount" placeholder="Amount" min="1">
+          <span class="num-form_span" id="calculation"></span>
+        </div>
+        <div>
+          <input class="form_phone-num" type="text" name="phone" placeholder="Enter your phone number">
+        </div>
+        <div>
+          <select class="form_select" name="city" id="">
+            <option value="-1">Select ur city</option>
+            <option value="NY">New York</option>
+            <option value="FL">Miami</option>
+            <option value="LA">Los Angeles</option>
+            <option value="WA">Washington</option>
+          </select>
+        </div>
+        <div>
+          <button type="button" id="order-btn">
+            Order now!
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
