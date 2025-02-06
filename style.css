@@ -63,6 +63,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 body .hidden {
@@ -86,13 +87,13 @@ body .hidden {
   backdrop-filter: blur( 20px );
   -webkit-backdrop-filter: blur( 20px );
   border-radius: 10px;
-
   width: 500px;
   height: 500px;
-
   position: absolute;
   top: 20%;
   left: 36%;
+  transition: border 0.5s ease-in-out;
+  border: 5px solid rgba( 255, 255, 255, 0.25 );
 }
 
 .order_form {
@@ -150,4 +151,22 @@ body .hidden {
   width: 50px;
   margin-left: 10px;
   border-radius: 7px;
+}
+
+.invalid {
+  border-color: #ff3b30;
+  animation: shake 0.7s ease-in-out;
+}
+
+#notification_form {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ff3b30;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
 }
